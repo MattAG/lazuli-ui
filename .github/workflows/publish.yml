@@ -1,0 +1,32 @@
+name: Publish
+
+on:
+  push:
+    branches:
+      - 'main'
+      - 'next'
+      - 'alpha'
+      - 'beta'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: ./packages/lib
+
+    if: "!contains(github.event.head_commit.message, 'ci skip') && !contains(github.event.head_commit.message, 'skip ci')"
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2.1.3
+        with:
+          node-version: 14.x
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
+      - name: Release on NPM
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npx semantic-release

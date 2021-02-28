@@ -1,0 +1,15 @@
+{
+    "name": "@lazuli-ui/docs",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "serve": "vite preview"
+    },
+    "dependencies": {
+        "@lazuli-ui/lib": "^0.0.0-development",
+        "vue": "^3.0.6",
+        "vue-router": "^4.0.4"
+    }
+}

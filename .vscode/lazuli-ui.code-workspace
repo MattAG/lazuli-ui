@@ -1,0 +1,22 @@
+{
+    "folders": [
+        {
+            "name": "root",
+            "path": ".."
+        },
+        {
+            "name": "docs",
+            "path": "../packages/docs/"
+        },
+        {
+            "name": "lib",
+            "path": "../packages/lib/"
+        }
+    ],
+    "settings": {
+        "files.exclude": {
+            "node_modules": true,
+            "packages": true
+        }
+    }
+}

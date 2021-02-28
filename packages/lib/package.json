@@ -1,0 +1,36 @@
+{
+    "name": "@lazuli-ui/lib",
+    "version": "0.0.0-development",
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "url": "https://github.com/MattAG/lazuli-ui"
+    },
+    "files": [
+        "dist",
+        "src/**/*.d.ts"
+    ],
+    "main": "./dist/lazuli-ui.umd.js",
+    "module": "./dist/lazuli-ui.es.js",
+    "types": "./src/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/lazuli-ui.es.js",
+            "require": "./dist/lazuli-ui.umd.js"
+        }
+    },
+    "scripts": {
+        "build": "vite build",
+        "semantic-release": "semantic-release"
+    },
+    "dependencies": {
+        "vue": "^3.0.6"
+    },
+    "devDependencies": {
+        "@semantic-release/changelog": "^5.0.1",
+        "@semantic-release/git": "^9.0.0",
+        "semantic-release": "^17.4.0",
+        "semantic-release-npm-github-publish": "^1.4.0"
+    }
+}

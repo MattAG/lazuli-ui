@@ -1,0 +1,13 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "paths": {
+            "@lazuli-ui/lib/*": [
+                "../lib/src"
+            ]
+        }
+    },
+    "include": [
+        "./src"
+    ]
+}
