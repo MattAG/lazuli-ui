@@ -11,13 +11,13 @@
         "dist",
         "src/**/*.d.ts"
     ],
-    "main": "./dist/lazuli-ui.umd.js",
-    "module": "./dist/lazuli-ui.es.js",
+    "main": "./dist/lib.umd.js",
+    "module": "./dist/lib.es.js",
     "types": "./src/index.d.ts",
     "exports": {
         ".": {
-            "import": "./dist/lazuli-ui.es.js",
-            "require": "./dist/lazuli-ui.umd.js"
+            "import": "./dist/lib.es.js",
+            "require": "./dist/lib.umd.js"
         }
     },
     "scripts": {
