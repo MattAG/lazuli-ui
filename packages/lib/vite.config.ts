@@ -10,10 +10,15 @@ export default defineConfig({
             name: 'LazuliUi'
         },
         rollupOptions: {
-            external: ['vue'],
+            external: [
+                'vue',
+                'phosphor-vue'
+            ],
             output: {
+                exports: 'named',
                 globals: {
-                    vue: 'Vue'
+                    vue: 'Vue',
+                    'phosphor-vue': 'PhosphorVue'
                 }
             }
         }

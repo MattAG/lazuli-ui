@@ -7,7 +7,8 @@ export default defineConfig({
     plugins: [vue()],
     resolve: {
         alias: {
-            '@lazuli-ui/lib': path.resolve(__dirname, '../lib/src/main.ts')
+            '/@': path.resolve(__dirname, 'src'),
+            '/@lib': path.resolve(__dirname, '../lib/src')
         }
     },
     server: {
