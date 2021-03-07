@@ -1,1 +1,0 @@
-import{d as r,o,c as e,w as t,b as a,i as s}from"./vendor.5d9a12bb.js";var n=r({name:"Home"});const b=s(" Buttons ");n.render=function(r,s,n,d,u,c){const l=a("router-link");return o(),e(l,{class:"border-b border-transparent hover:border-blue-200",to:"/buttons"},{default:t((()=>[b])),_:1})};export default n;
