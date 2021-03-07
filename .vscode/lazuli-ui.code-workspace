@@ -17,6 +17,15 @@
         "files.exclude": {
             "node_modules": true,
             "packages": true
-        }
+        },
+        "typescript.tsdk": "root\\node_modules\\typescript\\lib"
+    },
+    "extensions": {
+        "recommendations": [
+            "bradlc.vscode-tailwindcss",
+            "dbaeumer.vscode-eslint",
+            "johnsoncodehk.volar",
+            "stylelint.vscode-stylelint"
+        ]
     }
 }

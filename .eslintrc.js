@@ -16,6 +16,7 @@ module.exports = {
         'jsdoc'
     ],
     rules: {
+        '@typescript-eslint/comma-dangle': 'error',
         '@typescript-eslint/indent': [
             'error',
             4
