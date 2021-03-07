@@ -1,8 +1,5 @@
 <template>
-    <router-link class="border-b border-transparent hover:border-blue-200"
-                 to="/buttons">
-        Buttons
-    </router-link>
+    <div />
 </template>
 
 <script lang="ts">

@@ -3,6 +3,9 @@ const colours = require('tailwindcss/colors');
 module.exports = {
     darkMode: 'media',
     theme: {
+        fontFamily: {
+            'font-sans': 'Jost'
+        },
         extend: {
             colors: {
                 blue: {
@@ -14,9 +17,13 @@ module.exports = {
         }
     },
     variants: {
-        extend: {}
+        extend: {
+            borderWidth: ['focus']
+        }
     },
     plugins: [
-        require('@tailwindcss/forms')
+        require('@tailwindcss/forms'),
+        require('./plugins/button'),
+        require('./plugins/toast')
     ]
 };
